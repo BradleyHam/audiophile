@@ -1,0 +1,24 @@
+.top-nav{
+    height: 90px;
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 24px;
+}
+.top-nav ul{
+    display: none;
+}
+
+.logo{
+    height: 25px;
+    width: 143px;
+    background: url('../images/shared/desktop/logo.svg');
+}
+
+.cart{
+    height: 20px;
+    width: 23px;
+    background: url('../images/shared/desktop/icon-cart.svg');
+}

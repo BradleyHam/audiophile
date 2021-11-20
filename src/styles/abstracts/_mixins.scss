@@ -1,0 +1,15 @@
+@mixin small-mq{
+    @media(min-width: map-get($breakpoints, small )){
+        @content;
+    }
+}
+@mixin medium-mq{
+    @media(min-width: map-get($breakpoints, medium )){
+        @content;
+    }
+}
+@mixin large-mq{
+    @media(min-width: map-get($breakpoints, large )){
+        @content;
+    }
+}

@@ -1,0 +1,24 @@
+.buttonOne, .buttonTwo{
+    height: 48px;
+    width: 160px;
+}
+.buttonOne{
+    background-color: $feature;
+    color: white;
+    &:hover{
+        background-color: $feature-light;
+    }
+}
+.buttonTwo{
+    border: 1px solid black;
+    color: black;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+.buttonThree{
+    &:hover{
+        color: $feature;
+    }
+}
