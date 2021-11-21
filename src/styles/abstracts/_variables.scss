@@ -12,6 +12,10 @@ $light: $white-slight-tone;
 $super-light: $almost-white;
 $dark: $black-slight-tint;
 
+$gutter-small: 0 24px;
+$gutter-medium: 0 40px 0 39px;
+$gutter-large:0 165px;
+
 $font-stack: (
   'Manrope',
   'Arial',
@@ -19,10 +23,7 @@ $font-stack: (
 );
 
 $breakpoints: (
-  'small': 767px,
-  'medium': 992px,
-  'large': 1200px,
+  'medium': 767px,
+  'large': 992px,
+  'xlarge': 1200px,
 );
-
-
-

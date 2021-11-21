@@ -5,20 +5,57 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 0 24px;
+    padding: $gutter-small;
+    @include medium-bp{
+        justify-content: initial;
+        padding: $gutter-medium;
+    }
+    @include xlarge-bp{
+        padding: $gutter-large;
+        justify-content: space-between;
+    }
 }
 .top-nav ul{
     display: none;
+    @include xlarge-bp{
+        display: flex;
+    }
 }
-
+.top-nav ul li:not(:last-child){
+    margin-right: 33px;
+}
+.top-nav ul li{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+.top-nav ul li:hover{
+    color: $feature;
+    cursor: pointer;
+}
 .logo{
     height: 25px;
     width: 143px;
     background: url('../images/shared/desktop/logo.svg');
+    @include medium-bp{
+        margin-right: auto;
+        margin-left: 42px;
+    }
+    @include xlarge-bp{
+        display: initial;
+        margin-right: initial;
+        margin-left: 0;
+    }
 }
-
 .cart{
     height: 20px;
     width: 23px;
     background: url('../images/shared/desktop/icon-cart.svg');
+}
+
+button.hamburger{
+   // display: none;
+    @include xlarge-bp{
+        display: none;
+    }
 }
