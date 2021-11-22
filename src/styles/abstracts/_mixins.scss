@@ -1,3 +1,8 @@
+@mixin small-bp{
+     @media(min-width: map-get($breakpoints, small )){
+       @content;
+    }
+}
 @mixin medium-bp{
      @media(min-width: map-get($breakpoints, medium )){
        @content;

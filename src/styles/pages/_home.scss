@@ -1,0 +1,48 @@
+.hero{
+    background: $black;
+    height: 100vh;
+    color: white;
+    background: center/cover url('../images/home/mobile/image-header.jpg');
+    position: relative;
+    @include medium-bp{
+        background: center/cover url('../images/home/tablet/image-header.jpg');
+    }
+    @include large-bp{
+        background: center/cover url('../images/home/desktop/image-hero.jpg');
+    }
+}
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: $gutter-medium;
+    text-align: center;
+    @include large-bp{
+        align-items: flex-start;
+        width: 410px;
+    }
+    @include xlarge-bp{
+        padding: $gutter-large;
+    }
+  
+}
+.hero-content h1{
+    padding: 21px 0 28px 0;
+}
+.hero-content p{
+    padding-bottom: 38px;
+    @include small-bp{
+        padding: 0 30px 38px 30px;
+    }
+    @include medium-bp{
+        width: 350px;
+        text-align: left;
+    }
+    @include large-bp{
+        padding: 0 0 38px 0;
+    }
+}

@@ -4,16 +4,22 @@ body{
     font-family: $font-stack;
     font-size: 15px;
     font-weight: 500;
+    line-height: 25px;
 }
 h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
-    font-weight: bold;
 }
 h1{
-    font-size: 36px;
-    line-height: 58px;
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    @include small-bp{
+        font-size: 36px;
+        line-height: 58px;
+    }
     @include medium-bp{
         font-size: 56px;
+        line-height: 58px;
     }
 }
 h2{
@@ -51,4 +57,7 @@ h6{
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 25px;
+}
+.secondary-text__on-dark{
+    opacity: 0.5;
 }

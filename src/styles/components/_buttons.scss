@@ -1,15 +1,25 @@
-.buttonOne, .buttonTwo{
+.button-one, .button-two, .button-three{
+    cursor: pointer;
+}
+.button-one, .button-two{
     height: 48px;
     width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 13px;
 }
-.buttonOne{
+.button-one{
     background-color: $feature;
     color: white;
     &:hover{
         background-color: $feature-light;
     }
 }
-.buttonTwo{
+.button-two{
     border: 1px solid black;
     color: black;
     &:hover{
@@ -17,7 +27,7 @@
         color: white;
     }
 }
-.buttonThree{
+.button-three{
     &:hover{
         color: $feature;
     }
