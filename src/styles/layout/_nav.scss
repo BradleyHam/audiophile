@@ -1,17 +1,16 @@
 .top-nav{
     position: relative;
     height: 90px;
- 
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     padding: $gutter-small;
-    @include medium-bp{
+   @include respond-to(medium){
         justify-content: initial;
         padding: $gutter-medium;
     }
-    @include xlarge-bp{
+    @include respond-to(xlarge){
         padding: $gutter-large;
         justify-content: space-between;
     }
@@ -25,16 +24,16 @@
     bottom: 0;
     left: 0;
     right: 0;
-    @include medium-bp{
+    @include respond-to(medium){
         margin: $gutter-medium;
     }
-    @include xlarge-bp{
+    @include respond-to(xlarge){
         margin: $gutter-large;
     }
 }
 .top-nav ul{
     display: none;
-    @include xlarge-bp{
+    @include respond-to(xlarge){
         display: flex;
     }
 }
@@ -55,11 +54,11 @@
     height: 25px;
     width: 143px;
     background: url('../images/shared/desktop/logo.svg');
-    @include medium-bp{
+    @include respond-to(medium){
         margin-right: auto;
         margin-left: 42px;
     }
-    @include xlarge-bp{
+    @include respond-to(xlarge){
         display: initial;
         margin-right: initial;
         margin-left: 0;
@@ -72,7 +71,7 @@
 }
 
 button.hamburger{
-    @include xlarge-bp{
+    @include respond-to(xlarge){
         display: none;
     }
 }

@@ -13,11 +13,11 @@ h1{
     font-size: 26px;
     line-height: 40px;
     letter-spacing: 8px;
-    @include small-bp{
+    @include respond-to(small){
         font-size: 36px;
         line-height: 58px;
     }
-    @include medium-bp{
+    @include respond-to(medium){
         font-size: 56px;
         line-height: 58px;
     }

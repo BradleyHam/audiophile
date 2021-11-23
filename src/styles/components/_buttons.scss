@@ -28,6 +28,11 @@
     }
 }
 .button-three{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: .5;
     &:hover{
         color: $feature;
     }

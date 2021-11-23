@@ -23,8 +23,8 @@ $font-stack: (
 );
 
 $breakpoints: (
-  'small': 400px,
-  'medium': 520px,
-  'large': 790px,
-  'xlarge': 1200px,
+  'small': (min-width: 400px),
+  'medium': (min-width: 520px),
+  'large': (min-width: 790px),
+  'xlarge': (min-width: 1200px),
 );
