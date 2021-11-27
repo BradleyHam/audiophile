@@ -23,9 +23,14 @@ h1{
     }
 }
 h2{
-    font-size: 40px;
+    font-size: 28px;
     line-height: 44px;
     letter-spacing: 1.5px;
+    @include respond-to(medium){
+        font-size: 56px;
+        line-height: 58px;
+    
+    }
 }
 h3{
     font-size: 56px;

@@ -1,0 +1,51 @@
+ .categorys{
+    padding: $gutter-small;
+    margin: 120px 0;
+    @include respond-to(large){
+        display: flex;
+    }
+    @include respond-to(xlarge){
+       padding: $gutter-large;
+   }
+}
+.categorys__product{  
+    background: $light;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.categorys__product h6{
+    padding-bottom: 22px;
+}
+.categorys__product button{
+    padding-bottom: 27px;
+}
+.categorys__product:not(:last-child){
+   margin-bottom: 68px;
+   @include respond-to(large){
+       margin-bottom: initial;
+       margin-right: 10px;
+   }
+}
+.categorys__image--product-one{
+  background: center/cover url('../images/shared/desktop/image-category-thumbnail-headphones.png');
+  height: 100px;
+  width: 84px;
+}
+.categorys__image--product-two{
+   background: center/cover url('../images/shared/desktop/image-category-thumbnail-speakers.png');
+   height: 100px;
+   width: 84px;
+}
+.categorys__image--product-three{
+  background: center/cover url('../images/shared/desktop/image-category-thumbnail-earphones.png');
+  height: 103px;
+  width: 104px;
+}
+[class^=categorys__image]{
+   transform: translateY(-20px) scale(1.6);
+}
+

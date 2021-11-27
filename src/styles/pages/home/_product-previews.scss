@@ -1,0 +1,159 @@
+$large-content-padding: 101px 41px 101px 95px;
+
+.product-previews__product{
+    text-align: center;
+    margin: $gutter-small;
+    border-radius: 8px;
+    @include respond-to(xlarge){
+        margin: $gutter-large;
+    }
+ }
+ .product-previews__product p{
+    padding-bottom: 32px;
+ }
+.product-previews__product:not(:last-child){
+    margin-bottom: 24px;
+}
+.product-previews__product:last-child{
+    margin-bottom: 120px;
+}
+// product one 
+.product-previews__product--product-one {
+    background: $feature;
+    color: white;
+    position: relative;
+    padding: 23px 55px 24px 55px;
+    @include respond-to(xlarge){
+        display: flex;
+        height: 560px;
+        padding: initial;
+        align-items: center;
+    }
+}
+.product-previews__image--product-one{
+    background: center/cover url('../images/home/mobile/image-speaker-zx9.png');
+    height: 207px;
+    width: 172px;
+    margin: 32px auto; 
+    @include respond-to(xlarge){
+        background: center/cover url('../images/home/desktop/image-speaker-zx9.png');
+        height: 490px;
+        width: 410px;
+        margin-bottom: -10px;
+        align-self: flex-end;
+        z-index: 2;
+   }
+}
+.product-previews__content--product-one{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+   @include respond-to(xlarge){
+     align-items: flex-start;
+     text-align: left;
+     flex:1;
+   }
+}
+
+.image-container{
+    flex:1;
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+.product-previews__product--product-one button{
+    margin: 0 auto;
+    @include respond-to(xlarge){
+        margin: initial;
+    }
+ }
+.product-previews__product--product-one::after {
+   display: block;
+   content: '';
+   top:-200px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+   background: center/cover url('../images/home/desktop/pattern-circles.svg');
+   //transform: scale(.8);
+   z-index: 1;
+   @include respond-to(xlarge){
+    top:0;
+    left: -400px;
+   }
+}
+.product-previews__product--product-one button{
+    background: $black;
+    color: $white;
+    margin-bottom: 26px;position: relative;
+    z-index: 4;
+}
+.product-previews__product--product-one button:hover{
+    background: $white;
+    color: $black;
+}
+.product-previews__product--product-one p{
+  opacity: .6;
+  margin-top: 20px;
+  width: 390px;
+  @include respond-to(xlarge){
+    padding-bottom: 50px;   
+}
+}
+
+// product two 
+.product-previews__product--product-two{
+    background: right/cover url('../images/home/mobile/image-speaker-zx7.jpg');
+    height: 320px;
+    @include respond-to(medium){
+        background: right/cover url('../images/home/tablet/image-speaker-zx7.jpg'); 
+    }
+    @include respond-to(xlarge){
+        background: center/cover url('../images/home/desktop/image-speaker-zx7.jpg');  
+    }
+}
+.product-previews__product-two--content{
+    padding: 101px 92px 101px 24px;
+    @include respond-to(xlarge){
+        padding: $large-content-padding;
+    }
+}
+.product-previews__product-two--content h2, .product-previews__product-three--content h2{
+    text-align: left;
+    padding-bottom: 42px;
+}
+// product three
+.product-previews__product--product-three{
+    @include respond-to(medium){
+        display: flex;
+    }
+}
+.product-previews__product-three--image{
+    height: 200px;
+    background: center/cover url('../images/home/mobile/image-earphones-yx1.jpg');
+    @include respond-to(medium){
+        height: 320px;
+        margin-right: 5px;
+        flex:5
+    }
+    @include respond-to(xlarge){
+     height: 340px;
+    }
+}
+.product-previews__product-three--content{
+    margin-top: 24px;
+    background: $light;
+    padding: 41px 42px 41px 24px;
+    @include respond-to(medium){
+        margin-top: initial;
+        margin-left: 5px;
+        flex: 4;
+    }
+    @include respond-to(xlarge){
+        padding: $large-content-padding;
+    }
+}
+.product-previews__product--product-three > *{
+    border-radius: 8px;
+}
