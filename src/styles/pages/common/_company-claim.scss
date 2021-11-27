@@ -1,0 +1,48 @@
+.company-claim{
+    padding: $gutter-small;
+    text-align: center;
+    padding-bottom: 155px;
+    @include respond-to(large){
+        display: flex;
+        align-items: center;
+    }
+    @include respond-to(xlarge){
+        padding: $gutter-large;
+        padding-bottom: 200px
+    }
+}
+.company-claim__text{
+    @include respond-to(medium){
+        padding: 0 58px;
+    }
+    @include respond-to(large){
+        order: -1;
+        flex:1;
+        text-align: left;
+        padding: 0 125px 0 0;
+    }
+}
+.company-claim__image{
+    height: 300px;
+    width: 100%;
+    background: $light;
+    background: center/cover url('../images/shared/mobile/image-best-gear.jpg');
+    border-radius: 8px;
+    @include respond-to(medium){
+        background: center/cover url('../images/shared/tablet/image-best-gear.jpg');
+    }
+    @include respond-to(large){
+        flex:1;
+        height: 540px;
+        background: center/cover url('../images/shared/desktop/image-best-gear.jpg');
+    }
+}
+.company-claim__heading{
+    padding: 40px 0 46px 0;
+    @include respond-to(large){
+        padding-top:0;
+      }
+}
+.company-claim__p{
+    opacity: .5;
+}
