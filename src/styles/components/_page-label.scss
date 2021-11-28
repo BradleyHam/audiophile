@@ -1,0 +1,13 @@
+.page-label{
+    height: 192px;
+    padding-top:90px;
+    background: $black;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond-to(medium){
+        height: 336px;
+    }
+}

@@ -1,0 +1,94 @@
+.product{
+    padding: $gutter-small;
+    margin: 60px 0 120px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    @include respond-to(large){
+        flex-flow: row;
+        padding: $gutter-medium;
+    }
+    @include respond-to(xlarge){
+        padding: $gutter-large;
+    }
+}
+.product:nth-of-type(even){
+    .product__text-container{
+        @include respond-to(large){
+            order: -1;
+            padding: 126px 125px 126px 0;
+        }
+    }
+}
+.product:nth-of-type(odd){
+    .product__text-container{
+        @include respond-to(large){
+            padding: 126px 0 126px 125px;
+        }
+    }
+}
+.product__text-container:last-child{
+    margin-bottom: 50px;
+}
+.product__text-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    @include respond-to(medium){
+        width: 572px;
+    }
+    @include respond-to(large){
+        flex: 1;
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+.product__image{
+    height: 352px;
+    width: 100%;
+    background: $light;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    @include respond-to(medium){
+      padding: 230px 0;
+    }
+    @include respond-to(large){
+        flex: 1;
+    }
+}
+.product__heading{
+    margin-bottom: 38px;
+}
+.product__p{
+    margin-bottom: 34px;
+}
+.product__image--mark-2{
+    background: center/cover url('../images/product-xx99-mark-two-headphones/mobile/image-product.jpg');
+    @include respond-to(medium){
+        background: center url('../images/product-xx99-mark-two-headphones/tablet/image-product.jpg'); 
+    }
+    @include respond-to(large){
+        background: center/cover url('../images/product-xx99-mark-two-headphones/desktop/image-product.jpg'); 
+    }
+    
+}
+.product__image--mark-1{
+    background: center/cover url('../images/product-xx99-mark-one-headphones/mobile/image-product.jpg');
+    @include respond-to(medium){
+        background: center url('../images/product-xx99-mark-one-headphones/tablet/image-product.jpg'); 
+    }
+    @include respond-to(large){
+        background: center/cover url('../images/product-xx99-mark-one-headphones/desktop/image-product.jpg'); 
+    }
+}
+.product__image--xx59{
+    background: center/cover url('../images/product-xx59-headphones/mobile/image-product.jpg');
+    @include respond-to(medium){
+        background: center url('../images/product-xx59-headphones/tablet/image-product.jpg'); 
+    }
+    @include respond-to(large){
+        background: center/cover url('../images/product-xx59-headphones/desktop/image-product.jpg'); 
+    }
+}

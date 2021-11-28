@@ -9,9 +9,11 @@
 @import './layout/nav';
 @import './layout/footer';
 
+@import './components/page-label';
 @import './components/buttons';
 @import './components/hamburger';
 @import './components/logo';
+@import './components/product';
 
 @import './pages/common/company-claim';
 @import './pages/home/hero';

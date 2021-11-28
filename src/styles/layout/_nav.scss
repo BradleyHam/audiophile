@@ -1,11 +1,15 @@
 .top-nav{
-    position: relative;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     padding: $gutter-small;
+    background: transparent;
+    position: absolute;
+    z-index: 200;
+    top:0;
+    width: 100%;
    @include respond-to(medium){
         justify-content: initial;
         padding: $gutter-medium;

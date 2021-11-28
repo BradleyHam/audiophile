@@ -35,13 +35,16 @@ module.exports = {
     }),
 
     // Generates an HTML file from a template
-    // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
       title: 'Audiophile',
    //   favicon: paths.src + '/images/favicon.png',
-      template: paths.src + '/template.html', // template file
+      template: paths.src + '/index.html', // template file
       filename: 'index.html', // output file
     }),
+    new HtmlWebpackPlugin({  // Also generate a test.html
+      template: paths.src + '/headphones.html',
+      filename: 'headphones.html',
+    })
   ],
 
   // Determine how modules within the project are treated

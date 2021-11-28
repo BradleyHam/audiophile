@@ -15,6 +15,7 @@
 .button-one{
     background-color: $feature;
     color: white;
+    border: none;
     &:hover{
         background-color: $feature-light;
     }
