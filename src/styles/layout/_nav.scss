@@ -50,10 +50,7 @@
     color: $feature;
     cursor: pointer;
 }
-.logo{
-    height: 25px;
-    width: 143px;
-    background: url('../images/shared/desktop/logo.svg');
+.top-nav .logo{
     @include respond-to(medium){
         margin-right: auto;
         margin-left: 42px;

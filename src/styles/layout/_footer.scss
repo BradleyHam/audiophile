@@ -1,0 +1,98 @@
+footer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    background: $black;
+    color: white;
+    width: 100%;
+    padding: $gutter-small;
+    @include respond-to(medium){
+        align-items: flex-start;
+        text-align: left;
+    }
+    @include respond-to(xlarge){
+        padding: $gutter-large;
+    }
+}
+.footer__nav{
+    margin-top: 48px;
+}
+.footer__nav ul{
+    position: relative;
+    @include respond-to(medium){
+        display: flex;
+    }
+}
+.footer__nav ul::before{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: $feature;
+    position: absolute;
+    top: -121px;
+    @include respond-to(medium){
+        width: 114px;
+    }
+}
+.footer__nav li{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+.footer__nav li:hover{
+    color: $feature;
+    cursor: pointer;
+
+}
+.footer__nav li:not(:last-child){
+    margin-bottom: 28px;
+    @include respond-to(medium){
+        margin-right: 33px;
+        margin-bottom: 0;
+    }
+}
+.footer__bottom-divs{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @include respond-to(medium){
+        width: 100%;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+}
+.footer__p{
+    padding-top: 60px;
+    opacity: .5;
+    margin-bottom: 58px;
+}
+.footer__copyright{
+    opacity: .5;
+    margin-bottom: 58px;
+}
+footer .logo{
+    margin-left: 0;
+    margin-top: 48px;
+}
+.footer__social-media{
+    display: flex;
+    margin-bottom: 38px;
+}
+.footer__social-media > div:hover{
+    cursor: pointer;
+}
+.footer__social-media > div:not(:last-child){
+    margin-right: 16px;
+}
+.footer__social-media--facebook{
+    background: url('../images/shared/desktop/icon-facebook.svg')
+}
+.footer__social-media--instagram{
+    background: url('../images/shared/desktop/icon-instagram.svg')
+}
+.footer__social-media--twitter{
+    background: url('../images/shared/desktop/icon-twitter.svg');
+    height: 20px!important;
+}

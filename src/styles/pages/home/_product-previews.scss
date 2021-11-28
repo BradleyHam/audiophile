@@ -96,7 +96,10 @@ $large-content-padding: 101px 41px 101px 95px;
 .product-previews__product--product-one p{
   opacity: .6;
   margin-top: 20px;
-  width: 390px;
+  width: 100%;
+  @include respond-to(medium){
+    width: 390px;
+}
   @include respond-to(xlarge){
     padding-bottom: 50px;   
 }
