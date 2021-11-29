@@ -1,0 +1,20 @@
+.product__image--zx9{
+    background: center/cover url('../images/product-zx9-speaker/mobile/image-product.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/product-zx9-speaker/tablet/image-product.jpg');
+    }
+    @include respond-to(large){
+        background: center/cover url('../images/product-zx9-speaker/desktop/image-product.jpg');
+        height: 560px;
+    }
+}
+.product__image--zx7{
+    background: center/cover url('../images/product-zx7-speaker/mobile/image-product.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/product-zx7-speaker/tablet/image-product.jpg');
+    }
+    @include respond-to(large){
+        background: cover url('../images/product-zx7-speaker/desktop/image-product.jpg');
+        height: 560px;
+    }
+}

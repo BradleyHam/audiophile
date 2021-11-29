@@ -1,0 +1,10 @@
+.product__image--yx1{
+    background: center/cover url('../images/product-yx1-earphones/mobile/image-product.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/product-yx1-earphones/tablet/image-product.jpg');
+    }
+    @include respond-to(large){
+        background: center/cover url('../images/product-yx1-earphones/desktop/image-product.jpg');
+        height: 560px;
+    }
+}

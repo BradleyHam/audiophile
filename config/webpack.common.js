@@ -44,6 +44,14 @@ module.exports = {
     new HtmlWebpackPlugin({  // Also generate a test.html
       template: paths.src + '/headphones.html',
       filename: 'headphones.html',
+    }),
+    new HtmlWebpackPlugin({  // Also generate a test.html
+      template: paths.src + '/earphones.html',
+      filename: 'earphones.html',
+    }), 
+    new HtmlWebpackPlugin({  // Also generate a test.html
+      template: paths.src + '/speakers.html',
+      filename: 'speakers.html',
     })
   ],
 
