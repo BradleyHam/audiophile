@@ -35,3 +35,23 @@
     background: $light;
     margin-bottom: 32px;
 }
+
+.product-single-images{
+    padding: $gutter-small;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 174px) 368px;
+    gap: 20px;
+    margin-bottom: 120px;
+    @include respond-to(medium){
+        grid-template-columns: 23fr 36fr;
+        grid-template-rows: 174px 174px;
+    }
+    @include respond-to(xlarge){
+        padding: $gutter-large;
+        grid-template-rows: 280px 280px;
+    }
+}
+.product-single-images > div{
+    border-radius: 8px;
+}

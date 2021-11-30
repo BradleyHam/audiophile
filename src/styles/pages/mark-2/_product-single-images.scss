@@ -10,25 +10,6 @@
         height: 560px;
     }
 }
-.product-single-images{
-    padding: $gutter-small;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 174px) 368px;
-    gap: 20px;
-    margin-bottom: 120px;
-    @include respond-to(medium){
-        grid-template-columns: 23fr 36fr;
-        grid-template-rows: 174px 174px;
-    }
-    @include respond-to(xlarge){
-        padding: $gutter-large;
-    }
-}
-.product-single-images > div{
-    border-radius: 8px;
-}
-
 .product-single-images--m2-one{
     background: center/cover url('../images/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg');
     @include respond-to(medium){

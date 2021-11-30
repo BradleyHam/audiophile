@@ -1,0 +1,41 @@
+.product-single__image{
+    background: center/cover url('../images/product-xx59-headphones/mobile/image-product.jpg');
+    @include respond-to(large){
+        background: center/cover url('../images/product-xx59-headphones/tablet/image-product.jpg');
+        height: 480px;
+    }
+    @include respond-to(xlarge){
+        background: center/cover url('../images/product-xx59-headphones/desktop/image-product.jpg');
+        flex: 1;
+        height: 560px;
+    }
+}
+.product-single-images--xx59-one{
+    background: center/cover url('../images/product-xx59-headphones/mobile/image-gallery-1.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/product-xx59-headphones/tablet/image-gallery-1.jpg');
+     }
+    @include respond-to(xlarge){
+        background: center/cover url('../images/product-xx59-headphones/desktop/image-gallery-1.jpg');
+     }
+}
+.product-single-images--xx59-two{
+    background: center/cover url('../images/product-xx59-headphones/mobile/image-gallery-2.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/product-xx59-headphones/tablet/image-gallery-2.jpg');
+     }
+     @include respond-to(xlarge){
+        background: center/cover url('../images/product-xx59-headphones/desktop/image-gallery-2.jpg');
+     }
+}
+.product-single-images--xx59-three{
+    background: center/cover url('../images/product-xx59-headphones/mobile/image-gallery-3.jpg');
+    @include respond-to(medium){
+       grid-row: 1/3;
+       grid-column: 2/3;
+       background: center/cover url('../images/product-xx59-headphones/tablet/image-gallery-3.jpg');
+    }
+    @include respond-to(xlarge){
+        background: center/cover url('../images/product-xx59-headphones/desktop/image-gallery-3.jpg');
+     }
+}

@@ -1,0 +1,41 @@
+.product-single__image--zx9{
+    background: center/cover url('../images/product-zx9-speaker/mobile/image-product.jpg');
+    @include respond-to(large){
+        background: center/cover url('../images/product-zx9-speaker/tablet/image-product.jpg');
+        height: 480px;
+    }
+    @include respond-to(xlarge){
+        background: center/cover url('../images/product-zx9-speaker/desktop/image-product.jpg');
+        flex: 1;
+        height: 560px;
+    }
+}
+.product-single-images--zx9-one{
+    background: center/cover url('../images/product-zx9-speaker/mobile/image-gallery-1.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/product-zx9-speaker/tablet/image-gallery-1.jpg');
+     }
+    @include respond-to(xlarge){
+        background: center/cover url('../images/product-zx9-speaker/desktop/image-gallery-1.jpg');
+     }
+}
+.product-single-images--zx9-two{
+    background: center/cover url('../images/product-zx9-speaker/mobile/image-gallery-2.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/product-zx9-speaker/tablet/image-gallery-2.jpg');
+     }
+     @include respond-to(xlarge){
+        background: center/cover url('../images/product-zx9-speaker/desktop/image-gallery-2.jpg');
+     }
+}
+.product-single-images--zx9-three{
+    background: center/cover url('../images/product-zx9-speaker/mobile/image-gallery-3.jpg');
+    @include respond-to(medium){
+       grid-row: 1/3;
+       grid-column: 2/3;
+       background: center/cover url('../images/product-zx9-speaker/tablet/image-gallery-3.jpg');
+    }
+    @include respond-to(xlarge){
+        background: center/cover url('../images/product-zx9-speaker/desktop/image-gallery-3.jpg');
+     }
+}
