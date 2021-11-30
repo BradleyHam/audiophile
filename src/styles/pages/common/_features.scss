@@ -1,0 +1,13 @@
+.features{
+    padding: $gutter-small;
+    @include respond-to(xlarge){
+        flex: 1;
+        padding: $gutter-large;
+    }
+}
+.features h3{
+    margin-bottom: 36px;
+}
+.features p{
+    margin-bottom: 123px;
+}

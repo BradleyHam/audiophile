@@ -41,18 +41,42 @@ module.exports = {
       template: paths.src + '/index.html', // template file
       filename: 'index.html', // output file
     }),
-    new HtmlWebpackPlugin({  // Also generate a test.html
+    new HtmlWebpackPlugin({  
       template: paths.src + '/headphones.html',
       filename: 'headphones.html',
     }),
-    new HtmlWebpackPlugin({  // Also generate a test.html
+    new HtmlWebpackPlugin({  
       template: paths.src + '/earphones.html',
       filename: 'earphones.html',
     }), 
-    new HtmlWebpackPlugin({  // Also generate a test.html
+    new HtmlWebpackPlugin({ 
       template: paths.src + '/speakers.html',
       filename: 'speakers.html',
-    })
+    }),
+    new HtmlWebpackPlugin({ 
+      template: paths.src + '/mark-2.html',
+      filename: 'mark-2.html',
+    }),
+    new HtmlWebpackPlugin({ 
+      template: paths.src + '/mark-1.html',
+      filename: 'mark-1.html',
+    }),
+    new HtmlWebpackPlugin({ 
+      template: paths.src + '/xx59.html',
+      filename: 'xx59.html',
+    }),
+    new HtmlWebpackPlugin({ 
+      template: paths.src + '/zx9.html',
+      filename: 'zx9.html',
+    }),
+    new HtmlWebpackPlugin({ 
+      template: paths.src + '/zx7.html',
+      filename: 'zx7.html',
+    }),
+    new HtmlWebpackPlugin({ 
+      template: paths.src + '/yx1.html',
+      filename: 'yx1.html',
+    }),
   ],
 
   // Determine how modules within the project are treated

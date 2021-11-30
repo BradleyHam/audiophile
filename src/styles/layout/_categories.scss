@@ -1,7 +1,7 @@
  .categorys{
     padding: $gutter-small;
     margin: 120px 0;
-    @include respond-to(large){
+    @include respond-to(medium){
         display: flex;
     }
     @include respond-to(xlarge){
@@ -25,9 +25,12 @@
 }
 .categorys__product:not(:last-child){
    margin-bottom: 68px;
-   @include respond-to(large){
+   @include respond-to(medium){
        margin-bottom: initial;
        margin-right: 10px;
+   }
+   @include respond-to(large){
+       margin-right: 30px;
    }
 }
 .categorys__image--product-one{

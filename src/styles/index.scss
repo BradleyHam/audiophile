@@ -8,18 +8,26 @@
 
 @import './layout/nav';
 @import './layout/footer';
+@import './layout/categories';
 
 @import './components/page-label';
 @import './components/buttons';
 @import './components/hamburger';
 @import './components/logo';
 @import './components/product';
+@import './components/add-to-cart';
 
 @import './pages/common/company-claim';
+@import './pages/common/product-single';
+@import './pages/common/similar-products';
+@import './pages/common/included';
+@import './pages/common/features';
+@import './pages/common/features-and-included';
 @import './pages/home/hero';
-@import './pages/home/categories';
 @import './pages/home/product-previews';
 @import './pages/headphones/product-images';
 @import './pages/speakers/product-images';
 @import './pages/earphones/product-images';
+@import './pages/mark-2/product-single-images';
+
 

@@ -1,0 +1,6 @@
+.features-and-included{
+    @include respond-to(xlarge){
+        display: flex;
+        margin-top: 128px;
+    }
+}

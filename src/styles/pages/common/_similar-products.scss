@@ -1,0 +1,77 @@
+
+.similar-products__group{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: $gutter-small;
+    @include respond-to(medium){
+        flex-flow: row;
+    }
+    @include respond-to(xlarge){
+        padding: $gutter-large;
+    }
+}
+.similar-products h3{
+    margin-bottom: 52px;
+    text-align: center;
+}
+.similar-product{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 56px;
+}
+.similar-product h4{
+    padding: 32px 0 41px 0;
+    @include respond-to(medium){
+       font-size: 18px;
+    }
+    @include respond-to(large){
+       font-size: 24px;
+    }
+}
+.similar-product__image{
+    height: 120px;
+    background: $light;
+    width: 100%;
+    border-radius: 8px;
+    @include respond-to(medium){
+        min-height: 318px;
+     }
+}
+.similar-product:not(:last-child){
+    @include respond-to(medium){
+        margin-right: 10px;
+    }
+    @include respond-to(large){
+        margin-right: 30px;
+    }
+ }
+.similar-product__image--mark1{
+    background: center/cover url('../images/shared/mobile/image-xx99-mark-one-headphones.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/shared/tablet/image-xx99-mark-one-headphones.jpg');
+     }
+    @include respond-to(large){
+        background: center/cover url('../images/shared/desktop/image-xx99-mark-one-headphones.jpg');
+     }
+}
+.similar-product__image--xx59{
+    background: center/cover url('../images/shared/mobile/image-xx59-headphones.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/shared/tablet/image-xx59-headphones.jpg');
+     }
+     @include respond-to(large){
+        background: center/cover url('../images/shared/desktop/image-xx59-headphones.jpg');
+     }
+}
+.similar-product__image--zx9{
+    background: center/cover url('../images/shared/mobile/image-zx9-speaker.jpg');
+    @include respond-to(medium){
+        background: center/cover url('../images/shared/tablet/image-zx9-speaker.jpg');
+     }
+    @include respond-to(large){
+        background: center/cover url('../images/shared/desktop/image-zx9-speaker.jpg');
+     }
+}

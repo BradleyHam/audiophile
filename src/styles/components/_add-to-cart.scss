@@ -1,0 +1,10 @@
+.add-to-cart{
+    display: flex;
+    width: 296px;
+    justify-content: space-between;
+    margin-bottom: 88px;
+}
+.add-to-cart__quantity-select{
+    width: 120px;
+    background: $light;
+}

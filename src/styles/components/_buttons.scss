@@ -1,4 +1,4 @@
-.button-one, .button-two, .button-three{
+.button-one, .button-two, .button-three, .back-button{
     cursor: pointer;
 }
 .button-one, .button-two{
@@ -36,5 +36,13 @@
     opacity: .5;
     &:hover{
         color: $feature;
+    }
+}
+.back-button{
+    padding: 16px 0 34px 24px;
+    margin-top: 124px;
+    @include respond-to(xlarge){
+        padding: $gutter-large;
+        padding-bottom: 34px;
     }
 }
