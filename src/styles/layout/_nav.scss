@@ -6,10 +6,11 @@
     color: white;
     padding: $gutter-small;
     background: transparent;
-    position: absolute;
-    z-index: 200;
+    position: fixed;
+    z-index: 2000;
     top:0;
     width: 100%;
+   background: $dark;
    @include respond-to(medium){
         justify-content: initial;
         padding: $gutter-medium;
@@ -41,7 +42,7 @@
         display: flex;
     }
 }
-.top-nav ul li:not(:last-child){
+.top-nav ul a:not(:last-child){
     margin-right: 33px;
 }
 .top-nav ul li{

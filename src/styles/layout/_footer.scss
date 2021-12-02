@@ -46,8 +46,10 @@ footer{
     cursor: pointer;
 
 }
-.footer__nav li:not(:last-child){
+.footer__nav li{
     margin-bottom: 28px;
+}
+.footer__nav a:not(:last-child){
     @include respond-to(medium){
         margin-right: 33px;
         margin-bottom: 0;
