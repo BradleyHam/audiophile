@@ -7,4 +7,21 @@
 .add-to-cart__quantity-select{
     width: 120px;
     background: $light;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
 }
+
+.add-to-cart__quantity-select > *{
+    flex: 1;
+}
+.add-to-cart__qauntity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .add-to-cart__add, .add-to-cart__remove{
+     border: none;
+     cursor: pointer;
+     opacity: .6;
+ }
