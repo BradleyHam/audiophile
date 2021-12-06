@@ -4,4 +4,3 @@ if(localStorage.getItem('cartItems')){
 }else{
     localStorage.setItem('cartItems', JSON.stringify(cart));
 }
-export default cart;
