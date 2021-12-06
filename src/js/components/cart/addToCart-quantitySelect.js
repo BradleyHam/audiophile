@@ -7,9 +7,9 @@ export function quantitySelect(component){
             let itemQuantity = component.querySelector('.add-to-cart__qauntity');
             let quantity = +itemQuantity.textContent;
 
-            if(e.target == removeItem && quantity > 0){
+            if(e.target == removeItem && quantity > 1){
                 itemQuantity.textContent = quantity - 1;
-            }else if(e.target == removeItem && quantity == 0){
+            }else if(e.target == removeItem && quantity == 1){
                 return;
             }
             else{

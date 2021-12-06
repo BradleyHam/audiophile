@@ -53,6 +53,7 @@
 }
 .cart-dropdown__remove-all{
     text-decoration: underline;
+    text-transform: capitalize;
 }
 .cart-dropdown__items-container{
     display: flex;
@@ -79,4 +80,11 @@
 .cart-item__quantity{
     display: flex;
     align-items: center;
+}
+
+#no-items{
+    margin-top: -15px;
+    color:$feature;
+    font-style: italic;
+    font-size: 14px;
 }

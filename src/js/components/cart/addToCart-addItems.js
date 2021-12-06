@@ -1,4 +1,5 @@
 import items from '../../data/item-data';
+import { addNoItemSpan} from './noItems';
 
 const addItemsButton = document.querySelector('.add-to-cart__button');
 const cartContainer = document.querySelector('.cart-dropdown__items-container');
@@ -8,7 +9,7 @@ const totalElement = document.querySelector('.cart-dropdown__total-row div');
 populateCartFromLocalStorage();
 cartCounter();
 
-addItemsButton.addEventListener('click', () => {
+addItemsButton && addItemsButton.addEventListener('click', () => {
 
     const itemQuantity = +document.querySelector('.product-single .add-to-cart__qauntity').textContent;
     const itemType = addItemsButton.dataset.type;
@@ -27,6 +28,7 @@ addItemsButton.addEventListener('click', () => {
         attachCounterFunctionality(cartItems, item);
         cartCounter();
     }
+    addNoItemSpan();
 });
 
 function updateCartData(item, itemQuantity, cartItems){
